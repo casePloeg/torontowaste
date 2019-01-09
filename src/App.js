@@ -4,6 +4,7 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 import ResultsList from "./ResultsList";
 import Favourites from "./Favourites";
+import Footer from "./Footer";
 
 class App extends Component {
   constructor() {
@@ -48,6 +49,7 @@ class App extends Component {
               trashItem.body = trashItem.body.replace(/&lt;/g, "<");
               trashItem.body = trashItem.body.replace(/&gt;/g, ">");
               trashItem.body = trashItem.body.replace(/&amp;/g, "&");
+              trashItem.body = trashItem.body.replace(/&quot;/g, "");
 
               results.push(trashItem);
             }
@@ -85,23 +87,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <SearchBar
-          handleSearch={this.handleSearch}
-          clearSearch={this.clearSearch}
-        />
-        <ResultsList
-          handleNewFavourite={this.handleNewFavourite}
-          handleRemoveFavourite={this.handleRemoveFavourite}
-          resultItems={this.state.resultItems}
-          favourites={this.state.favourites}
-        />
-        <Favourites
-          handleNewFavourite={this.handleNewFavourite}
-          handleRemoveFavourite={this.handleRemoveFavourite}
-          favourites={this.state.favourites}
-        />
+      <div>
+        <div className="App">
+          <Header />
+          <SearchBar
+            handleSearch={this.handleSearch}
+            clearSearch={this.clearSearch}
+          />
+          <ResultsList
+            handleNewFavourite={this.handleNewFavourite}
+            handleRemoveFavourite={this.handleRemoveFavourite}
+            resultItems={this.state.resultItems}
+            favourites={this.state.favourites}
+          />
+          {// if there is atleast 1 favourited item generate the favourites component
+          this.state.favourites.length > 0 && (
+            <Favourites
+              handleNewFavourite={this.handleNewFavourite}
+              handleRemoveFavourite={this.handleRemoveFavourite}
+              favourites={this.state.favourites}
+            />
+          )}
+        </div>
+        <Footer />
       </div>
     );
   }
