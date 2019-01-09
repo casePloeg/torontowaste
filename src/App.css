@@ -9,11 +9,14 @@ h2 {
   --primary-color: #23995c;
   --secondary-color: #1d5995;
   --default-grey: #aaaaaa;
+
+  overflow: hidden;
 }
 
 .header {
   text-align: center;
   color: white;
+  width: 100vw;
   background: linear-gradient(
     to right,
     var(--secondary-color),
@@ -46,21 +49,21 @@ h2 {
 .trashItem {
   flex-basis: 100%;
   display: grid;
-  column-gap: 0.5rem;
-  grid-template-columns: auto 3fr 8fr;
-  margin-left: 1rem;
+  grid-template-columns: 3fr 8fr;
+
   align-items: baseline;
 }
 
 .trashItem .title {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: baseline;
+  justify-items: start;
   font-weight: normal;
 }
 
 .resultsList {
   margin: 1rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .favourites {
@@ -69,6 +72,7 @@ h2 {
 
 .star {
   color: var(--default-grey);
+  margin-right: 0.25rem;
 }
 
 .f {
@@ -77,4 +81,10 @@ h2 {
 
 .fa-search {
   transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .trashItem {
+    grid-template-columns: 1fr;
+  }
 }

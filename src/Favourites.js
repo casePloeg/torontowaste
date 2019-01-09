@@ -14,7 +14,7 @@ class Favourites extends Component {
       />
     ));
     return (
-      <div className="resultsList">
+      <div className="favourites">
         <h2>Favourites</h2>
         {favItems}
       </div>
