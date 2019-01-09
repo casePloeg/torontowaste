@@ -1,8 +1,18 @@
 import React, { Component } from "react";
+import TrashItem from "./TrashItem";
 
 class Favourites extends Component {
   render() {
-    let favItems = <p>hehe</p>;
+    const favItems = this.props.favourites.map(item => (
+      <TrashItem
+        key={item.title}
+        body={item.body}
+        title={item.title}
+        fav={true}
+        handleNewFavourite={this.props.handleNewFavourite}
+        handleRemoveFavourite={this.props.handleRemoveFavourite}
+      />
+    ));
     return (
       <div className="resultsList">
         <h2>Favourites</h2>
