@@ -3,7 +3,6 @@ import Star from "./Star";
 
 class TrashItem extends Component {
   handleClick() {
-    console.log("yeet");
     if (this.props.fav) {
       this.props.handleRemoveFavourite({
         title: this.props.title,
@@ -18,15 +17,17 @@ class TrashItem extends Component {
   }
 
   render() {
-    const test = "<p>hello</p>";
     return (
       <div className="trashItem">
-        <div onClick={() => this.handleClick()}>
+        <div className="star" onClick={() => this.handleClick()}>
           <Star fav={this.props.fav} />
         </div>
 
-        <h3>{this.props.title}</h3>
-        <div dangerouslySetInnerHTML={{ __html: this.props.body }} />
+        <h3 className="title">{this.props.title}</h3>
+        <div
+          className="body"
+          dangerouslySetInnerHTML={{ __html: this.props.body }}
+        />
       </div>
     );
   }

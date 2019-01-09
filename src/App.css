@@ -3,14 +3,16 @@ h2 {
 }
 
 .App {
-  text-align: center;
-
+  margin: auto;
+  text-align: left;
+  font-size: large;
   --primary-color: #23995c;
   --secondary-color: #1d5995;
   --default-grey: #aaaaaa;
 }
 
 .header {
+  text-align: center;
   color: white;
   background: linear-gradient(
     to right,
@@ -21,18 +23,58 @@ h2 {
 }
 
 .searchBar {
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  margin: 1rem;
+}
+
+.searchBar button {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.searchBar input[type="text"] {
+  font-size: large;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.trashItem {
+  flex-basis: 100%;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: auto 3fr 8fr;
+  margin-left: 1rem;
+  align-items: baseline;
+}
+
+.trashItem .title {
+  font-weight: normal;
 }
 
 .resultsList {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .favourites {
+  margin: 1rem;
 }
 
 .star {
   color: var(--default-grey);
 }
 
-.star-f {
+.f {
   color: var(--primary-color);
+}
+
+.fa-search {
+  transform: scale(-1, 1);
 }

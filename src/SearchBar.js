@@ -14,7 +14,6 @@ class SearchBar extends Component {
       this.clearSearch();
     } else {
       e.persist();
-      //console.log(e.target.value);
       // update the value of the text input in the state
       //this.setState;
       this.setState(() => {
@@ -25,12 +24,10 @@ class SearchBar extends Component {
 
   submitSearch() {
     // return the value of the input box to the app component (make the api call)
-    console.log(this.state.input);
     this.props.handleSearch(this.state.input);
   }
 
   clearSearch() {
-    console.log("search has been cleared");
     this.props.clearSearch();
   }
 

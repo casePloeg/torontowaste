@@ -24,8 +24,8 @@ class App extends Component {
 
   // this method handles the api call, will update the results list
   handleSearch(keyword) {
-    // create a regex using the keyword given the by user
-    const re = new RegExp(keyword);
+    // create a regex using the keyword given the by user, spaces are required so that words contained in other words aren't matched. ie, rat => crate
+    const re = new RegExp("\\s" + keyword + "\\s");
     let results = [];
     // make an fetch api call on the toronto waste database
     fetch(
@@ -39,7 +39,11 @@ class App extends Component {
           myJson.forEach(trashItem => {
             // if the current trash item contains the keyword given by the user, add this item to the results items that will be displayed to the user
 
-            if (trashItem.keywords.match(re)) {
+            if (
+              trashItem.keywords.match(re) ||
+              trashItem.title.match(re) ||
+              trashItem.body.match(re)
+            ) {
               // convert special characters to html tags so that rendering works properly
               trashItem.body = trashItem.body.replace(/&lt;/g, "<");
               trashItem.body = trashItem.body.replace(/&gt;/g, ">");
