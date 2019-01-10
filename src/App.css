@@ -3,15 +3,16 @@
   text-align: left;
   font-size: large;
   --primary-color: #23995c;
+  --primary-light: #f7fefa;
   --secondary-color: #1d5995;
   --default-grey: #aaaaaa;
 
   overflow: hidden;
   min-height: 90vh;
+  text-align: left;
 }
 
 h2 {
-  text-align: center;
   margin: 0px;
   color: var(--primary-color);
 }
@@ -90,6 +91,10 @@ a:visited:active {
   margin: 1rem;
 }
 
+.favourites-wrapper {
+  background: var(--primary-light);
+  padding: 0.5rem;
+}
 .favourites {
   margin: 1rem;
 }
@@ -112,6 +117,11 @@ a:visited:active {
 }
 
 .footer {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   text-align: center;
   width: 100%;
   height: 5vh;
