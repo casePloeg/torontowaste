@@ -26,7 +26,7 @@ class App extends Component {
   // this method handles the api call, will update the results list
   handleSearch(keyword) {
     // create a regex using the keyword given the by user, spaces are required so that words contained in other words aren't matched. ie, rat => crate
-    const re = new RegExp("\\s" + keyword + "\\s");
+    const re = new RegExp("." + keyword + ".");
     let results = [];
     // make an fetch api call on the toronto waste database
     fetch(

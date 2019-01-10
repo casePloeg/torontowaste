@@ -11,6 +11,7 @@
 }
 
 h2 {
+  text-align: center;
   margin: 0px;
   color: var(--primary-color);
 }
@@ -35,6 +36,9 @@ a:visited:active {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
   width: 100vw;
@@ -43,7 +47,6 @@ a:visited:active {
     var(--secondary-color),
     var(--primary-color)
   );
-  padding: 1rem;
 }
 
 .searchBar {
