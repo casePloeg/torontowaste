@@ -120,7 +120,7 @@ class App extends Component {
           <ResultsList
             handleNewFavourite={this.handleNewFavourite}
             handleRemoveFavourite={this.handleRemoveFavourite}
-            resultItems={this.state.resultItems}
+            displayItems={this.state.resultItems}
             favourites={this.state.favourites}
           />
           {// if there is atleast 1 favourited item generate the favourites component
@@ -128,6 +128,7 @@ class App extends Component {
             <Favourites
               handleNewFavourite={this.handleNewFavourite}
               handleRemoveFavourite={this.handleRemoveFavourite}
+              displayItems={this.state.favourites}
               favourites={this.state.favourites}
             />
           )}
