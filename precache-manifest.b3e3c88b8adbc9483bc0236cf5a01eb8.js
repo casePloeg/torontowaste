@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/torontowaste/static/js/runtime~main.2fb56de7.js"
   },
   {
-    "revision": "d0389fcf1e1288cfb4dd",
-    "url": "/torontowaste/static/js/main.d0389fcf.chunk.js"
+    "revision": "85c3b0544e1eedf237fa",
+    "url": "/torontowaste/static/js/main.85c3b054.chunk.js"
   },
   {
     "revision": "07140812a98c93f90dd2",
     "url": "/torontowaste/static/js/1.07140812.chunk.js"
   },
   {
-    "revision": "d0389fcf1e1288cfb4dd",
-    "url": "/torontowaste/static/css/main.fccb5b5b.chunk.css"
+    "revision": "85c3b0544e1eedf237fa",
+    "url": "/torontowaste/static/css/main.d53b788e.chunk.css"
   },
   {
-    "revision": "df9adde5c9a57bd3c262ddfdbd0029fd",
+    "revision": "23dd29aebfc0dde8b53b1f99b3c4795e",
     "url": "/torontowaste/index.html"
   }
 ];

@@ -1,13 +1,13 @@
 {
-  "main.css": "/torontowaste/static/css/main.fccb5b5b.chunk.css",
-  "main.js": "/torontowaste/static/js/main.d0389fcf.chunk.js",
-  "main.js.map": "/torontowaste/static/js/main.d0389fcf.chunk.js.map",
+  "main.css": "/torontowaste/static/css/main.d53b788e.chunk.css",
+  "main.js": "/torontowaste/static/js/main.85c3b054.chunk.js",
+  "main.js.map": "/torontowaste/static/js/main.85c3b054.chunk.js.map",
   "static/js/1.07140812.chunk.js": "/torontowaste/static/js/1.07140812.chunk.js",
   "static/js/1.07140812.chunk.js.map": "/torontowaste/static/js/1.07140812.chunk.js.map",
   "runtime~main.js": "/torontowaste/static/js/runtime~main.2fb56de7.js",
   "runtime~main.js.map": "/torontowaste/static/js/runtime~main.2fb56de7.js.map",
-  "static/css/main.fccb5b5b.chunk.css.map": "/torontowaste/static/css/main.fccb5b5b.chunk.css.map",
+  "static/css/main.d53b788e.chunk.css.map": "/torontowaste/static/css/main.d53b788e.chunk.css.map",
   "index.html": "/torontowaste/index.html",
-  "precache-manifest.9516c8dbd748d2c937cd0aedabaf0746.js": "/torontowaste/precache-manifest.9516c8dbd748d2c937cd0aedabaf0746.js",
+  "precache-manifest.b3e3c88b8adbc9483bc0236cf5a01eb8.js": "/torontowaste/precache-manifest.b3e3c88b8adbc9483bc0236cf5a01eb8.js",
   "service-worker.js": "/torontowaste/service-worker.js"
 }
