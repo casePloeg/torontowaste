@@ -32,6 +32,8 @@ In your application, please include:
 1. A link to your codebase, for review.
 2. A link to a hosted version, for testing.
 
+## How this project was made
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
