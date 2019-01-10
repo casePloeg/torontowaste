@@ -1,4 +1,4 @@
-This project is meant to give a way for people to look up where they should be putting their waste while living in the Toronto area. Inspired by the Shopify Web Engineer challenge for 2019.
+This project is meant to give a way for people to look up where they should be putting their waste while living in the Toronto area. Inspired by the Shopify Web Engineer Challenge for Summer 2019.
 
 # Web Engineer Challenge - Summer 2019
 
